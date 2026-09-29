@@ -1,21 +1,26 @@
-venv/
-.venv/
-__pycache__/
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
 *.pyc
 
-node_modules/
-frontend/node_modules/
-dist/
-build/
-
+# Environment variables
 .env
-.env.*
-!.env.example
+backend/.env
+frontend/.env
 
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# macOS
 .DS_Store
-.vscode/
 
+# Python cache
+.pytest_cache/
+
+# IDE
+.vscode/
+# Database
+backend/*.db
 *.db
-*.sqlite
-*.sqlite3
-*.log
